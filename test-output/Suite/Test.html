@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 07 11:58:42 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>65 seconds (65659 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.HealthInsuranceRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HealthInsuranceRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC02:Validate Coverfox Health Insurance Plan For Single Person", "CoverFox Health Insurance Test"<br/>
+<a href="#Output-309271464" onClick='toggleBox("Output-309271464", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-309271464" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-309271464">
+Setting browser as chrome<br/>
+getting pincode error msg ,msg is <br/>
+getting mobile error msg ,msg is <br/>
+pincode error msg is <br/>
+mobole error msg is <br/>
+pin error msg validation is complete<br/>
+mobile error msg validation is complete<br/>
+Taking Screenshot<br/>
+Closing Browser<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	pincode error msg is not matching expected [Please enter a valid pin number] but found [],
+	mobile error message is not matching expected [Please enter a valid mobile number] but found []
+	at stepDefinitions.HealthInsurance.validate_error_message(HealthInsurance.java:103)
+	at ✽.Validate error message(file:///C:/Users/HP/eclipse-workspace/11Oct_BDD/src/test/resources/FeatureFiles/CoverFoxHealthInsurancePlan.feature:17)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace309271464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace309271464'><pre>java.lang.AssertionError: The following asserts failed:
+	pincode error msg is not matching expected [Please enter a valid pin number] but found [],
+	mobile error message is not matching expected [Please enter a valid mobile number] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at stepDefinitions.HealthInsurance.validate_error_message(HealthInsurance.java:103)
+	at ✽.Validate error message(file:///C:/Users/HP/eclipse-workspace/11Oct_BDD/src/test/resources/FeatureFiles/CoverFoxHealthInsurancePlan.feature:17)
+</pre></div></td>
+<td>30</td>
+<td>runner.HealthInsuranceRunner@23348b5d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.HealthInsuranceRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HealthInsuranceRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC01:Validate Coverfox Health Insurance Plan For Single Person", "CoverFox Health Insurance Test"<br/>
+<a href="#Output-992955027" onClick='toggleBox("Output-992955027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-992955027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-992955027">
+Setting browser as chrome<br/>
+Actual Result is 48<br/>
+Closing Browser<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>runner.HealthInsuranceRunner@23348b5d</td></tr>
+</table><p>
+</body>
+</html>

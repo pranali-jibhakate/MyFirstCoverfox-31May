@@ -1,0 +1,7 @@
+com\CoverFox\Utils\Utility.class
+com\CoverFox\Pages\CoverFoxHealthPlanPage.class
+com\CoverFox\Pages\CoverFoxResultPage.class
+com\CoverFox\Pages\CoverFoxAddressDetailsPage.class
+com\CoverFox\DriverConfig\Driverfactory.class
+com\CoverFox\Pages\CoverFoxMemberDetailspage.class
+com\CoverFox\Pages\CoverFoxHomePage.class

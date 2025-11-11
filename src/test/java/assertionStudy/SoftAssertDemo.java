@@ -1,0 +1,9 @@
+package assertionStudy;
+
+import org.testng.annotations.Test;
+
+public class SoftAssertDemo {
+  @Test
+  public void f() {
+  }
+}
