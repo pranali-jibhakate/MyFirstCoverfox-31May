@@ -10,7 +10,8 @@ import io.cucumber.testng.CucumberOptions;
 		"C:\\Users\\HP\\eclipse-workspace\\11Oct_BDD\\src\\test\\resources\\FeatureFiles\\CoverFoxHealthInsurancePlan.feature"
 		}
 		,glue= {"stepDefinitions","hooks"}
-		,plugin = {"pretty","html:target/Cucumber-reports/reports.html"}, publish = true,
+		,plugin = {"pretty","html:target/Cucumber-reports/reports.html","json:target/Cucumber-reports/reports.json"
+}, publish = true,
 				dryRun=false)
 
 
